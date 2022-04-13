@@ -1,0 +1,13 @@
+16:44:27 **** Incremental Build of configuration Debug for project SCRs_Controller ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: SCRs_Controller.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SCRs_Controller_bsp/ps7_cortexa9_0/lib -o "SCRs_Controller.elf"  ./src/SCRs_Controller.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinix/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot open output file SCRs_Controller.elf: Invalid argument
+collect2.exe: error: ld returned 1 exit status
+make: *** [SCRs_Controller.elf] Error 1
+
+16:44:27 Build Finished (took 232ms)
+

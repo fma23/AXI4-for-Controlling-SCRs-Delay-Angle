@@ -1,0 +1,8 @@
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/hdl/design_1.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/0c22/src/Sinewaves.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/0c22/hdl/SCRs_Controller_v1_0_S00_AXI.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/0c22/hdl/SCRs_Controller_v1_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_SCRs_Controller_0_1/sim/design_1_SCRs_Controller_0_1.vhd" 
+
+nosort

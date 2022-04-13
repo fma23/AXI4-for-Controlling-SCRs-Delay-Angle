@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = MCS
+the_ROM_image:
+{
+	[bootloader]D:\VivdoProjects\SCRs_AXI\SCRs_AXI.sdk\Flash\Release\Flash.elf
+	D:\VivdoProjects\SCRs_AXI\SCRs_AXI.sdk\SCRs_Controller\Debug\SCRs_Controller.elf
+	D:\VivdoProjects\SCRs_AXI\SCRs_AXI.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+}
