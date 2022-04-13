@@ -1,17 +1,7 @@
-# AXI4-for-Controlling-SCRs-Delay-Angle
+AXI4-for-Controlling-SCRs-Delay-Angle
 
-Three Phase SCRs Rectifier Controller
+This Vivado project demonstrate how to use AXI4 peripheral on a Xilinix Zynq 7020 FPGA to transfer data from the PS to the PL and vice versa. In this post, I just want to share with you how I used AXI4 in one of the industrial high power three phase AC-DC rectifiers I developed the firmware for.
 
-This VHDL project controls six semiconductor controlled rectifiers ICs used for a three phase AC to DC converter. The projects generhe erated 3 sine waves signals; each having a 120 degrees phase shift. The phase delay in this example is assumed to be zero, but it can be changed by modifying the FiringPulse_RisingEdge constant. For a 0 degree delay this value is:166667, but for a 30 degrees delay this value needs to be: 233334. The firing pulse duration is 10 degrees, with references to the full cycle duration which is 360 degrees.
+The AC-DC rectifier I worked on uses Semiconductor Controlled Rectifiers, or what is commonly known as SCRs. More information about how SCRs work and theory of converting AC to DC using these Thyristors can be found on my previous tutorial: https://embeddeddesign.org/three-phase-full-wave-controller-bridge-rectifier/
 
-The second VHDL generates SCRs gates pulses with a width of 120 degrees. This time the firing pulse falling edge occurs at 833333 clock cycle after zero crossing.
-
-360 degrees corresponds to 20 ms, for a sine wave of 50 Hz frequency. The clock frequency is 100Mhz.
-
-More information about fully controlled 3 phase SCR rectifiers can be found at the links below:
-
-http://www.worldcolleges.info/sites/default/files/enggnotes/three-phase_controlled_rectifiers.pdf 
-http://www4.hcmut.edu.vn/~nvnho/Download/EngPE/Chapter3_Phase_Controlled_Rectifier.pdf 
-http://www.euedia.tuiasi.ro/lab_ep/ep_files/Lab_no_13_c1.pdf
-
-Any feedbacks please share with me at: fma23@sfu.ca
+Also for more information about how to implement AXI4 peripheral within your system, you can visit my previous tutorials: https://embeddeddesign.org/creating-a-custom-ip-block-in-vivado/ https://embeddeddesign.org/gpios-control-via-axi4-peripheral/
