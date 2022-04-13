@@ -1,4 +1,4 @@
-AXI4-for-Controlling-SCRs-Delay-Angle
+# AXI4-for-Controlling-SCRs-Delay-Angle
 
 This Vivado project demonstrate how to use AXI4 peripheral on a Xilinix Zynq 7020 FPGA to transfer data from the PS to the PL and vice versa. In this post, I just want to share with you how I used AXI4 in one of the industrial high power three phase AC-DC rectifiers I developed the firmware for.
 
